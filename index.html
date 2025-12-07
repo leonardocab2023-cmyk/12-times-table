@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>12 Times Table</title>
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: gray
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+        }
+
+        #output {
+            background: gray;
+            padding: 6px;
+            border-radius: 5px;
+            width: 250px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h2>JavaScript 12 Times Table Demo</h2>
+    <p id="output"></p>
+
+    <script>
+        // This variable will store the whole multiplication table as HTML text
+        let text = "";
+
+        // Loop from 1 to 12
+        for (let i = 1; i <= 12; i++) {
+            text += "12 × " + i + " = " + (12 * i) + "<br>";
+        }
+
+        // Display the results in the paragraph element
+        document.getElementById("output").innerHTML = text;
+    </script>
+</body>
+</html>
